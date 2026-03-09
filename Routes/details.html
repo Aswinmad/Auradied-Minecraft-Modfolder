@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura - Details</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght,GRAD@0,17..18,400..700,170;1,17..18,400..700,170&display=swap" rel="stylesheet">
+
+    <style>
+        
+           body,html{
+            height: 100%;
+           }
+           
+           body{
+                margin: 0;
+                background:url("../Files/whitebg.jpg");
+                background-repeat: no-repeat;
+                background-size: fill;
+                height: 100%;
+                background-position: center;
+                background-size: cover;
+            }
+
+            .nav{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                border-width: 1px;
+                border-style: solid;
+                border-top: none;
+                border-right: none;
+                border-left: none;
+                border-bottom-width: 100p;
+                align-items: center; 
+                background: transparent;
+                backdrop-filter: blur(10px);
+                box-sizing: border-box;
+            }
+
+            .butts,.logo{
+                flex: 1;
+                display: flex;
+                margin-top: 12px;
+                margin-left: 30px;
+                margin-bottom: 12px;
+            }
+
+            .butts{
+                gap:20px;
+                justify-content: end;
+                margin-right: 30px;
+                margin-top: 14px;
+            }
+
+            .name{
+                font-family: Google sans;
+                font-size: 30px;
+                margin-top: 0;
+                margin-bottom: 0;
+                font-weight: 600;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+
+            .flw{
+                font-family: Google sans;
+                font-size: 23px;
+                margin-top: 0;
+                margin-bottom: 0;
+                border-style: solid;
+                padding: 5px 17px;
+                border-width: 1.5px;
+                border-radius: 6px;
+                border-color: rgb(0, 0, 0);
+                transition: ease 0.15s;
+                cursor: pointer;
+                background-color: rgb(255, 255, 255);
+                color: rgb(0, 0, 0);
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+
+            .flw:hover{
+                background-color: black;
+                color: white;
+            }
+
+            .abt{
+                font-family: Google sans;
+                font-size: 23px;
+                margin-top: 0;
+                margin-bottom: 0;
+                border-style: solid;
+                padding: 5px 17px;
+                border-width: 1.5px;
+                border-radius: 6px;
+                border-color: rgb(0, 0, 0);
+                transition: ease 0.15s;
+                cursor: pointer;
+                background-color: rgb(255, 255, 255);
+                color: rgb(0, 0, 0);
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+
+            .abt:hover{
+                background-color: black;
+                color: white;   
+            }
+
+            .bothlist{
+                display: grid;
+                grid-template-columns: auto auto;
+                align-items: start;
+                justify-content: center;
+                gap: 80px;
+                width: fit-content;
+                margin: 0 auto;
+                height: fit-content;
+                padding: 25px;
+                margin-top: 35px;
+                margin-bottom: 40px;
+                border-radius: 20px;
+                border-style: solid;
+                border-width: 2px;
+                border-color: rgb(194, 194, 194);
+            }
+
+            .list{
+                font-family: Google sans;
+                font-size: 30px;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            .text{
+                font-size: 60px;
+                font-family: google sans;
+                font-weight: 500;
+                width: 900px;
+                max-width: 90vw;
+                text-align: center;
+                margin: 30px auto 0;
+            }
+
+            .desc{
+                font-size: 20px;
+                font-family: google sans;
+                font-weight: 300;
+                width: 1000px;
+                max-width: 90vw;
+                margin: 15px auto 0;
+                text-align: center;
+                color: rgb(117, 117, 117);
+            }
+
+            .back{
+                width: 40px;
+                position: absolute;
+                top: 70px;
+                left: 15px;
+                cursor: pointer;
+                margin-left: 15px;
+                margin-top: 15px;
+                background-color: white;
+                padding: 5px;
+                border-radius: 35%;
+                border-width: 1px;
+                border-style: solid;
+                border-color: rgb(0, 0, 0);
+                box-shadow: 0px 0px 0px rgb(117, 117, 117);
+                transition: ease 0.10s;
+            }
+
+            .back:hover{
+                box-shadow: 0px 3px 0px rgb(0, 0, 0);
+                background-color: rgb(250, 250, 250);
+            }
+
+                .opt{
+                 color: rgb(201, 0, 0);
+                background-color: rgb(255, 233, 233);
+                padding: 0px 20px;
+                border-radius: 50px;
+                margin-right: 7px;
+                border-width: 0px;
+                transition: ease 0.15s;
+}
+
+              .opt:hover{
+               box-shadow: 0px 0px 20px rgba(255, 189, 189, 0.603);
+               border-style: solid;
+               border-width: 1.5px;
+                }
+
+            /* Tablet */
+            @media (max-width: 900px) {
+                .text {
+                    font-size: 44px;
+                }
+
+                .list {
+                    font-size: 22px;
+                }
+
+                .bothlist {
+                    gap: 40px;
+                    padding: 20px;
+                }
+
+                .name {
+                    font-size: 24px;
+                }
+
+                .flw, .abt {
+                    font-size: 18px;
+                    padding: 4px 12px;
+                }
+            }
+
+               @media (max-width: 600px) {
+                .text {
+                    font-size: 32px;
+                }
+
+                .desc {
+                    font-size: 15px;
+                }
+
+                .bothlist {
+                    grid-template-columns: 1fr;
+                    gap: 0;
+                    width: calc(100% - 40px);
+                    box-sizing: border-box;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                }
+
+                .list {
+                    font-size: 18px;
+                }
+
+                .butts, .logo {
+                    margin-left: 15px;
+                }
+
+                .butts {
+                    margin-right: 15px;
+                    gap: 10px;
+                }
+
+                .name {
+                    font-size: 20px;
+                }
+
+                .flw, .abt {
+                    font-size: 15px;
+                    padding: 3px 10px;
+                }
+
+                .back {
+                    top: 60px;
+                    left: 5px;
+                    width: 30px;
+                }
+            }
+    </style>
+</head>
+<body>
+    
+    <div class="nav">
+        <div class="logo">
+            <a href="../index.html" style="text-decoration: none; color: black;"><p class="name">Auradied.</p></a> 
+        </div>
+        <div class="butts">
+            <div class="about">
+                 <a href="about.html" style="text-decoration: none;"> <p class="abt" >About</p></a>
+            </div>
+            <div class="follow">
+                <a href="https://linktr.ee/auradied" target="_blank" style="text-decoration: none;"><p class="flw">Follow</p></a>
+            </div>
+        </div>
+    </div>
+
+    <a href="../index.html"><img class="back" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWFycm93LWxlZnQtaWNvbiBsdWNpZGUtYXJyb3ctbGVmdCI+PHBhdGggZD0ibTEyIDE5LTctNyA3LTciLz48cGF0aCBkPSJNMTkgMTJINSIvPjwvc3ZnPg=="></a>
+    <p class="text"> <span class="opt">Mods</span>in there.</p>
+    <p class="desc">Names shown below are the mods present in my 1.21.11 fabric's mod folder. Most of these are for perfomance and utilities while others are libraries and they are required for other mods to run properly.</p>
+
+    <div class="bothlist">
+        <ul class="list">
+            <li>Force Close Loading Screen</li>
+            <li>Freecam</li>
+            <li>Armor HUD</li>
+            <li>Fabric Kotlin</li>
+            <li>Fabric API</li>
+            <li>Lithium</li>
+            <li>Packetfixer</li>
+            <li>Cloth Config Library</li>
+            <li>Mod Menu</li>
+            <li>Bad Optimizations</li>
+            <li>Language Reload</li>
+            <li>Immediately Fast</li>
+            <li>Ferrite Core</li>
+        </ul>
+
+        <ul class="list">
+            <li>Sodium</li>
+            <li>Sodium Extra</li>
+            <li>Shulkerbox Tooltip</li>
+            <li>Modernfix</li>
+            <li>Spark</li>
+            <li>Continuity</li>
+            <li>Entity Culling</li>
+            <li>More Culling</li>
+            <li>Yet Another Config Library</li>
+            <li>Ixeris</li>
+            <li>Zoomify</li>
+            <li>Gamma Utilities</li>
+            <li>Krypton</li>
+        </ul>
+    </div>
+</body>
+</html>

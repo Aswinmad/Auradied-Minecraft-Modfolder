@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght,GRAD@0,17..18,400..700,170;1,17..18,400..700,170&display=swap" rel="stylesheet">
+
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            background: url("../Files/whitebg.jpg") no-repeat center / cover;
+        }
+
+        .nav {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid black;
+            background: transparent;
+            backdrop-filter: blur(10px);
+            box-sizing: border-box;
+        }
+
+        .logo, .butts {
+            flex: 1;
+            display: flex;
+            margin: 12px 30px;
+        }
+
+        .butts {
+            gap: 20px;
+            justify-content: flex-end;
+            margin-right: 30px;
+        }
+
+        .name {
+            font-family: Google Sans;
+            font-size: 30px;
+            margin: 0;
+            font-weight: 600;
+            user-select: none;
+        }
+
+        .flw, .abt {
+            font-family: Google Sans;
+            font-size: 23px;
+            margin: 0;
+            border: 1.5px solid black;
+            padding: 5px 17px;
+            border-radius: 6px;
+            transition: ease 0.15s;
+            cursor: pointer;
+            background-color: white;
+            color: black;
+            user-select: none;
+        }
+
+        .flw:hover, .abt:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .back {
+            width: 40px;
+            position: absolute;
+            top: 70px;
+            left: 30px;
+            cursor: pointer;
+            background-color: white;
+            padding: 5px;
+            border-radius: 35%;
+            border: 1px solid black;
+            box-shadow: 0px 0px 0px rgb(117, 117, 117);
+            transition: ease 0.10s;
+            margin-top: 10px;
+        }
+
+        .back:hover {
+            box-shadow: 0px 3px 0px black;
+            background-color: rgb(250, 250, 250);
+        }
+
+        .text {
+            font-size: 100px;
+            font-family: Google Sans;
+            font-weight: 500;
+            max-width: 90vw;
+            margin: 170px auto 0;
+            text-align: center;
+        }
+
+        .opt {
+            color: orange;
+            background-color: rgb(255, 242, 218);
+            padding: 0px 30px;
+            border-radius: 100px;
+            margin-right: 15px;
+            border: 0px solid transparent;
+            transition: ease 0.15s;
+        }
+
+        .opt:hover {
+            box-shadow: 0px 0px 20px rgb(255, 236, 200);
+            border: 1.5px solid orange;
+        }
+
+        @media (max-width: 900px) {
+            .text { font-size: 70px; margin-top: 120px; }
+            .name { font-size: 24px; }
+            .flw, .abt { font-size: 18px; padding: 4px 12px; }
+        }
+
+        @media (max-width: 600px) {
+            .text { font-size: 38px; margin-top: 80px; }
+            .opt { padding: 0 15px; margin-right: 8px; }
+            .name { font-size: 20px; }
+            .flw, .abt { font-size: 15px; padding: 3px 10px; }
+            .logo, .butts { margin: 10px 15px; }
+            .back { top: 60px; left: 10px; width: 30px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <a href="../index.html" style="text-decoration: none; color: black;">
+                <p class="name">Auradied.</p>
+            </a>
+        </div>
+        <div class="butts">
+            <div class="about">
+                <a href="about.html" style="text-decoration: none;">
+                    <p class="abt">About</p>
+                </a>
+            </div>
+            <div class="follow">
+                <a href="https://linktr.ee/auradied" target="_blank" style="text-decoration: none;">
+                    <p class="flw">Follow</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <a href="../index.html">
+        <img class="back" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWFycm93LWxlZnQtaWNvbiBsdWNpZGUtYXJyb3ctbGVmdCI+PHBhdGggZD0ibTEyIDE5LTctNyA3LTciLz48cGF0aCBkPSJNMTkgMTJINSIvPjwvc3ZnPg==">
+    </a>
+
+    <p class="text"><span class="opt">Nothing</span>to show here..</p>
+</body>
+</html>
