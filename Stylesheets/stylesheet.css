@@ -201,7 +201,7 @@ body{
 @media (max-width: 900px) {
     .text {
         font-size: 44px;
-        margin-top: 100px;
+        margin-top: 25%;
     }
 
     .desc {
@@ -225,8 +225,8 @@ body{
 
 @media (max-width: 600px) {
     .text {
-        font-size: 28px;
-        margin-top: 60px;
+        font-size: 30px;
+        margin-top: 200px;
     }
 
     .desc {
