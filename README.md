@@ -2,8 +2,8 @@
 A Simple website to download my modfolder contains super perfomance mods easily.
 
 🌐 Website
-Check out the full details on the website:
-auradied-minecraft-modfolder.vercel.app
+Check out the full details on the website: 
+https://auradied-minecraft-modfolder.vercel.app
 
 📌 Notes
 This mod folder is for Minecraft Java Edition 1.21.11 only
